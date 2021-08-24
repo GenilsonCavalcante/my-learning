@@ -26,12 +26,63 @@
             <p>Basicamente, o conceito de função é bem dedutivo, é algo que se encarrega em realizar algo. Com elas, podemos otimizar muito nossos códigos, evitando a repetição de ações desnecessariamente.</p>
             <p>Veja o exemplo de uma função:</p>
             
-            <pre>
-                function somar(x, y) {
-                    soma = x + y;
-                    return soma;
-                }
-            </pre>
+            <code>
+                <pre>
+                    function somar(x, y) {
+                        soma = x + y;
+                        return soma;
+                    }
+
+                    somar(2, 2); //return 4
+                </pre>
+            </code>
+
+            <p>Como visto no exemplo acima, passamos dois valores e a função que chamamos de <strong>somar()</strong>, nos retorna uma resposta, mas nem sempre passamos valores para uma função.</p>
+            <p>Veja mais exemplos:</p>
+
+            <code>
+                <pre>
+                    function escreva() {
+                        alert("Hello World");
+                    }
+
+                    escreva(); //return "Hello World"
+                </pre>
+            </code>
+
+            <code>
+                <pre>
+                    function somar(num1, num2) {
+                        return num1 + num2;
+                    }
+                    
+                    let resultado = somar(1, 4);
+                    console.log(resultado);
+                </pre>
+            </code>
+
+            <code>
+                <pre>
+                    const somar = function(num1, num2) {return num1 + num2;}
+                    //Essa função é chamada de função anônima.
+                    //Onde quem define o nome desta função é o nome da variável.
+
+                    console.log(somar(1, 4));
+                </pre>
+            </code>
+
+            <code>
+                <pre>
+                    const somar = (num1, num2) => num1 + num2;
+                    //Função do tipo flecha.
+
+                    console.log(somar(1, 4));
+                </pre>
+            </code>
+            
+            <p>A vantagem de se utilizar parâmetros em funções, é que eu posso levar "qualquer" valor para ela executar, isso pode ser muito útil em muitas situações, mas cada caso é um caso.</p>
+
+            <p>OBS: É importante ressaltar que nem sempre se passarmos parâmetros de tipos diferentes o código possa ser executado sem erros, por isso é importante ver quais parâmetros podem ser passados.</p>
         </div>
     </div>
 
