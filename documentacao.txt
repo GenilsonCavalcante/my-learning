@@ -1,0 +1,28 @@
+### DOCUMENTAÇÃO DO CÓDIGO ### 
+
+index.html ------- Página Inicial. Onde mostra caixas para as linguagens em geral.
+styles.css ------- Estilização padrão para todas as páginas.
+conteudos.css ---- Estilização para as páginas de todos os conteúdos, tópicos de uma linguagem.
+cont-principal --- Estilização para as páginas principais das linguagens, onde mostram as listas de assuntos de tal linguagem.
+conteudo-js.js --- Cria uma lista de tópicos com os assuntos da linguagem Javascript na página main-javascript.html .
+conteudo-css.js -- Cria uma lista de tópicos com os assuntos da linguagem CSS na página main-html.html .
+conteudo-html.js - Cria uma lista de tópicos com os assuntos da linguagem HTML na página main-css.html .
+subconteúdos ----- São todos os assuntos de uma linguagem específica, gerados por uma lista de link no conteudo-***.js de tal linguagem.
+
+
+                          cont-principal.css
+                             conteudos.css       
+                              styles.css
+                              index.html
+                                 \|/
+                                  |
+                                  |
+                __________________|__________________
+                |                 |                 |
+                |                 |                 |
+            cont-html         cont-css          cont-js
+                |                 |                 |
+                |                 |                 |
+          conteudo-html.js  conteudo-css.js   conteudo-js.js
+               /|\               /|\               /|\
+          subconteúdos      subconteúdos       subconteúdos   

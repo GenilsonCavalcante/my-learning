@@ -1,0 +1,13 @@
+div#conteudo {
+    width: 300px;
+    text-align: center;
+    margin: 10% auto;
+    float: bottom;
+}
+
+select#lista {
+    width: 250px;
+}
+select option {
+    text-align: center;
+}

@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div.conteudo-geral {
+    display: flex;
+}
+
+/*CONTEÚDO ESQUERDO*/
+h1 {
+    text-align: center;
+}
+div.conteudo-esquerdo {
+    display: block;
+    float: left;
+}
+
+select#lista {
+    width: 250px;
+    height: 85vh;
+}
+select option {
+    text-align: center;
+}
+
+/*CONTEÚDO DIREITO*/
+div.conteudo-direito{
+    display: block;
+    margin: 50px 20px 20px 20px;
+}
+p {
+    margin: 20px;
+    text-align: justify;
+}
