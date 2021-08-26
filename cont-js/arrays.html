@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arrays</title>
+    <title>My-Learning</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../conteudos.css">
 </head>
@@ -22,7 +22,61 @@
     
         <div class="conteudo-direito">
             <h2>Arrays</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt aperiam nemo a cumque quibusdam sed iste labore quasi, ab inventore, ipsam consectetur dolorem sunt rem tenetur aliquid illum minus quaerat!</p>
+            <p>Arrays, listas, matrizes, como preferir chamar. São nomes diferentes que representa a mesma coisa. Um array é basicamente uma lista de valores que podemos atribuir a uma única variável.</p>
+            <p>Exemplo:</p>
+
+            <code>
+                <pre>
+                    let car = ["Ferrari", "Chevet", "Fusca"];
+                    //Declaração de um array!
+                </pre>
+            </code>
+
+            <p>Isso acima é o mesmo do que isso abaixo:</p>
+
+            <code>
+                <pre>
+                    let car1 = "Ferrari";
+                    let car2 = "Chevet";
+                    let car3 = "Fusca";
+                </pre>
+            </code>
+
+            <p>A vantagem de se utilizar matrizes é que se referirmos a listas grandes, para percorrer um a um dessa segunda forma demostrada, isso dá um grande trabalho. Mas se usarmos um array, isso pode ser facilitado e muito, pois com uma matriz, podemos recorrer os valores através de seus índices.</p>
+            <p>Note que as matrizes utilizam os seus índices para acessar os seus valores, e que os objetos, conteúdo visto anteriormente, usa-se de nomes "atributos" para acessar os seus valores.</p>
+            <p>Como dito antes, acessamos os valores de uma array pelo seu índice.</p>
+
+            <code>
+                <pre>
+                    const fruits = ["pera", "maça", "banana"];
+                    fruits.[0] //return "pera"
+                </pre>
+            </code>
+
+            <p>Uma das melhores formas de percorrer um array é através de um <b>for</b>:</p>
+
+            <code>
+                <pre>
+                    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                    let fLen = fruits.length;
+
+                    text = "&lt;ul&gt;";
+                    for (let i = 0; i &le; fLen; i++) {
+                      text += "&lt;li&gt;" + fruits[i] + "&lt;/li&gt;";
+                    }
+                    text += "&lt;/ul&gt;";
+                </pre>
+            </code>
+
+            <p>Existe muitas outras formas mais específicas de se percorrer a uma array.</p>
+            <p>Podemos adicionar elementos a um array através do <b>.push</b></p>
+
+            <code>
+                <pre>
+                    const fruits = ["Banana", "Orange", "Apple"];
+                    fruits.push("Lemon");  // Adds a new element (Lemon) to fruits 
+                </pre>
+            </code>
 
         </div>
     </div>
