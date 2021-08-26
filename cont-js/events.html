@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Learning</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../conteudos.css">
+</head>
+<body>
+    <div class="conteudo-geral">
+        <div class="conteudo-esquerdo">
+            <header>
+                <h1>JAVASCRIPT</h1>
+            </header>
+
+            <div class="lista-gerada">
+                <!-- Gerado no conteudos.js -->
+            </div>
+        </div>
+    
+        <div class="conteudo-direito">
+            <h2>Events</h2>
+            <p>Eventos são interações que ocorrem em ações geradas pelos usuários, ou simplesmente podem ser programadas para ocorrem.</p>
+            <p>Podemos citar exemplos de eventos como:</p>
+            <ul>
+                <li>Butão criado</li>
+                <li>Mudança de cor de fundo de acordo com o horário do sistema</li>
+                <li>Mudança de imagens, quando o usuário passa o mouse por cima dela</li>
+                <li>Carregamento de uma página</li>
+                <li>Quando o usuário arrasta o mouse para sair do site e abir uma janela de aviso</li>
+            </ul>
+
+            <p>A lista de eventos é gingantesca. Com o javascript, ele nos proporciona a executar códigos quando eventos são detectados.</p>
+            <p>Veja o exemplo de um evento <b>onclick</b> na caixa de código:</p>
+
+            <div id="Codificador">
+                <textarea name="input" id="input"><button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+<p id="demo"></p></textarea>
+                <input type="submit" value="Verificar" onclick="renderizar()">
+                    <!--Saída de Dados-->
+                <div id="overview">
+                    
+                </div>
+            </div>
+
+            <p>Veje mais tipos de eventos em javascript:</p>
+
+            <ul>
+                <li><strong>onchange</strong> - Um elemento HTML foi alterado </li>
+                <li>onclick - O usuário clica em um elemento HTML</li>
+                <li><strong>onmouseover</strong> - O usuário move o mouse sobre um elemento HTML</li>
+                <li><strong>onmouseout</strong> - O usuário move o mouse para longe de um elemento HTML</li>
+                <li><strong>onkeydown</strong> - O usuário pressiona uma tecla do teclado</li>
+                <li><strong>onload</strong> - O navegador terminou de carregar a página</li>
+            </ul>
+
+            <p>Obviamente a lista é muito maior que esta, e pode ser acessado por esse link: <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">W3Schools JavaScript Reference HTML DOM Events</a></p>
+
+        </div>
+    </div>
+
+    <script src="conteudo-js.js"></script>
+    <script src="../renderizador.js"></script>
+    
+</body>
+</html>

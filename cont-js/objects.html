@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Learning</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../conteudos.css">
+</head>
+<body>
+    <div class="conteudo-geral">
+        <div class="conteudo-esquerdo">
+            <header>
+                <h1>JAVASCRIPT</h1>
+            </header>
+
+            <div class="lista-gerada">
+                <!-- Gerado no conteudos.js -->
+            </div>
+        </div>
+    
+        <div class="conteudo-direito">
+            <h2>Objects</h2>
+            <p>No mundo ao nosso redor, estamos arrodeados de objetos, podemos categorizar objetos em diferentes tipos. Podemos dizer que uma TV é um objeto, uma bicicleta, um barco, uma pessoa, um planeta... Enfim, somos todos objetos distinguidos por nossas características e valores!</p>
+            <p>No javascript, os objetos são uma forma de poder armazenar valores referidos a tais objetos, abstraídos para o mundo da programação, em uma "variável", podendo assim, armazenar não somente um tipo de informação, mas as diversas informações referida a tal objeto.</p>
+
+            <code>
+                <pre>
+                    const car = {tipo: "Ferrari", modelo: "cavalo", cor: "red"};
+                    //Podemos acessar os seus valores, através de suas propriedades!
+
+                    console.log(car.tipo); //Retorna "Ferrari"
+                    console.log(car.modelo); //Retorna "cavalo"
+                    console.log(car.cor); //Retorna "red"
+                </pre>
+            </code>
+
+            <p>Observe que no javascript, um objeto é composto por {chaves} e os atributos são separados por um vírgula (,).</p>
+            <p>Outro exemplo de objetos:</p>
+
+            <code>
+                <pre>
+                    const person = {
+                        firstName: "John",
+                        lastName : "Doe",
+                        id       : 5566,
+                        fullName : function() {
+                          return this.firstName + " " + this.lastName;
+                          //o 'this' faz referência á própria função().
+                        }
+                      };
+                </pre>
+            </code>
+
+            <p>OBS: Evitar String, Number, e Boolean em objetos. Eles complicam seu código e tornam mais lento velocidade de execução. </p>
+
+            <div id="Codificador">
+                <textarea name="input" id="input"><h1>Título</h1></textarea>
+                <input type="submit" value="Verificar" onclick="renderizar()">
+                    <!--Saída de Dados-->
+                <div id="overview">
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="conteudo-js.js"></script>
+    <script src="../renderizador.js"></script>
+    
+</body>
+</html>

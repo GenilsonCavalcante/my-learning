@@ -10,8 +10,9 @@ contEsquerdo.innerHTML = `
 
             <option value="https://genilsoncavalcante.github.io/my-learning/index.html">####### HOME #######</option>
             <option value="functions.html">Functions</option>
-            <option value="teste2.html">Teste2</option>
-            <option value="teste3.html">Teste3</option>
+            <option value="objects.html">Objects</option>
+            <option value="events.html">Events</option>
+            <option value="arrays.html">Arrays</option>
 
         </select>
     </section>
