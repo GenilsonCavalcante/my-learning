@@ -13,6 +13,8 @@ contEsquerdo.innerHTML = `
             <option value="objects.html">Objects</option>
             <option value="events.html">Events</option>
             <option value="arrays.html">Arrays</option>
+            <option value="methods-arrays.html">Methods-Arrays</option>
+            <option value="classificacao-arrays.html">Classificação de Arrays</option>
 
         </select>
     </section>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Learning</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../conteudos.css">
+</head>
+<body>
+    <div class="conteudo-geral">
+        <div class="conteudo-esquerdo">
+            <header>
+                <h1>JAVASCRIPT</h1>
+            </header>
+
+            <div class="lista-gerada">
+                <!-- Gerado no conteúdos.js -->
+            </div>
+        </div>
+    
+        <div class="conteudo-direito">
+            <h2>Methods-Arrays</h2>
+            <p>Dentro dos arrays, temos alguns métodos que possibilitam coisas essenciais para podermos trabalharmos com eles, Vejamos alguns métodos:</p>
+            <p>Método <b>.toString()</b>. Esse método converte um array em uma lista dos valores formatados separados por uma vírgula.</p>
+
+            <code>
+                <pre>
+                    const fruits = ["Banana", "Orange", "Apple"];
+                    document.getElementById("demo").innerHTML = fruits.toString();
+
+                    //Resulta em: Banana, Orange, Apple
+                </pre>
+            </code>
+
+            <p>Temos ainda um método bem similar ao .toString(), o método <b>.join()</b>, seu diferencial é que podemos formatar o tipo de separador, podendo ser uma vírgula, asterísco, ou qualquer outro caractere.</p>
+
+            <code>
+                <pre>
+                    const fruits = ["Banana", "Orange", "Apple"];
+                    document.getElementById("demo").innerHTML = fruits.join(" * ");
+
+                    //Resulta em: Banana * Orange * Apple
+                </pre>
+            </code>
+
+            <p>O método <b>.pop()</b>, remove o último elemento.</p>
+
+            <p>O método <b>.push</b>, adiciona um elemento ao final de uma matriz</p>
+
+            <p>O método <b>.shift()</b>, remove o primeiro elemento da matriz e readapta os elementos posteriores a os índices inferiores, começando do índice 0 e continuando a sequência.</p>
+
+            <p>O método <b>.unshift()</b>, adiciona um elemento ao início, e faz a relocação dos índices devidamente em suas posições, adaptando a o padrão corretamente.</p>
+
+            <p>Uma boa prática de adicionar um item ao último elemento de um array, é através do tamanho do array calculado com a propriedade <b>.length</b>. Veja o exemplo:</p>
+
+            <code>
+                <pre>
+                    const fruits = ["Banana", "Orange", "Apple"]
+                    fruits[fruits.length] = "Kiwi";
+
+                    //Resulta em um array com Banana, Orange, Apple, Kiwi
+                </pre>
+            </code>
+
+            <p>Estes foram alguns dos métodos, ainda existem muitos, muitos até específicos.</p>
+           
+
+        </div>
+    </div>
+
+    <script src="conteudo-js.js"></script>
+    <script src="../renderizador.js"></script>
+    
+</body>
+</html>
